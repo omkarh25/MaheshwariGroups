@@ -19,3 +19,9 @@ Products:
 6. Generator Accessories
 7. DMC
 8. Other Accessories
+
+Changes:
+1. Add branches below 'Our trusted Partners'
+2. Add 4 more products page and display the catalog images under each product page
+3. Update website with latest images and content
+4. Add a 'About Us' page with the company history and mission
