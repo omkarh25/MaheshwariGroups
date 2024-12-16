@@ -3,7 +3,7 @@
  * Handles mobile menu, smooth scrolling, and other interactive features
  */
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mobile menu functionality
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const elementTop = element.getBoundingClientRect().top;
             const elementBottom = element.getBoundingClientRect().bottom;
             const isVisible = (elementTop < window.innerHeight) && (elementBottom >= 0);
-            
+
             if (isVisible) {
                 element.classList.add('animate-slide-up');
                 element.classList.remove('opacity-0');
