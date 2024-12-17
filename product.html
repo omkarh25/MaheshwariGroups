@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Maheshwari Industrial Supplies</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-neutral-background">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 max-w-8xl">
+            <div class="flex justify-between items-center py-6">
+                <div class="text-center">
+                    <a href="index.html" class="flex flex-col items-start group">
+                        <h1 class="font-display text-primary text-3xl font-bold group-hover:text-primary-dark transition-colors">Maheshwari Industrial Supplies</h1>
+                        <span class="text-primary-dark text-sm font-medium tracking-wide">Excellence Since 1980</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-10">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="index.html#products" class="text-gray-700 hover:text-primary font-medium transition-colors">Products</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary font-medium transition-colors">About Us</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-8xl">
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-12">
+                <div class="md:w-1/2">
+                    <img id="product-image" src="" alt="Product Image" class="w-full h-auto object-contain">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 id="product-name" class="font-display text-4xl font-bold text-primary mb-4"></h2>
+                    <p id="product-description" class="text-gray-600 mb-8"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-16 pb-6">
+        <div class="container mx-auto px-6 max-w-8xl">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About Us</h3>
+                    <p class="mb-2">An ISO 9001:2000 Certified Company</p>
+                    <p>Member of KASSIA</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Bangalore, Karnataka</p>
+                    <p class="mb-2"><i class="fas fa-phone mr-2"></i>+91 98765 43210</p>
+                    <p><i class="fas fa-envelope mr-2"></i>info@maheshwarigroups.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#products" class="hover:text-gray-300 transition-colors">Products</a></li>
+                        <li><a href="index.html#about" class="hover:text-gray-300 transition-colors">About Us</a></li>
+                        <li><a href="index.html#contact" class="hover:text-gray-300 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 pt-6 text-center">
+                <p>&copy; 2024 Maheshwari Industrial Supplies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/product.js"></script>
+</body>
+</html>
