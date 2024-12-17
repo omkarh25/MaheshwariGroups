@@ -61,14 +61,14 @@ npm run build
 ## Company Information
 
 Maheshwari Industrial Supplies is a leading manufacturer & supplier of:
-- Panel Locks
-- Key Locks
-- Hinges
-- 3-Point Locks
-- Gasketings
-- Generator Accessories
-- DMC
-- Other Industrial Accessories
+- 1.Panel Locks
+- 2.Key Locks
+- 3.Hinges
+- 4.3-Point Locks
+- 5.Gasketings
+- 6.Generator Accessories
+- 7.DMC
+- 8.Other Industrial Accessories
 
 ## Certifications & Memberships
 
