@@ -14,9 +14,9 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
-  { href: '/products', label: 'Products' },
-  { href: '/components/AboutSection', label: 'About Us' },
-  { href: '/components/ContactSection', label: 'Contact' },
+  { href: '#products', label: 'Products' },
+  { href: '#AboutSection', label: 'About Us' },
+  { href: '#ContactSection', label: 'Contact' },
 ]
 
 const ResponsiveNavbar = () => {
