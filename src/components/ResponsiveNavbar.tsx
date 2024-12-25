@@ -14,14 +14,9 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
-  { href: '/products/hinges', label: 'Hinges' },
-  { href: '/products/keylocks', label: 'Key Locks' },
-  { href: '/products/panellocks', label: 'Panel Locks' },
-  { href: '/products/3pointlocks', label: '3-Point Locks' },
-  { href: '/products/gasketings', label: 'Gasketings' },
-  { href: '/products/generatoraccessories', label: 'Generator Accessories' },
-  { href: '/products/dmc', label: 'DMC' },
-  { href: '/products/otherindustrialaccessories', label: 'Other Industrial Accessories' },
+  { href: '/products', label: 'Products' },
+  { href: '/components/AboutSection', label: 'About Us' },
+  { href: '/components/ContactSection', label: 'Contact' },
 ]
 
 const ResponsiveNavbar = () => {
