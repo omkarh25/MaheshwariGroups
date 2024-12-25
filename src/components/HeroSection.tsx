@@ -1,17 +1,35 @@
+'use client';
+
 /**
  * HeroSection Component
  * 
  * Displays the main hero section of the landing page with a background image,
  * headline, and call-to-action button.
  */
+import { useState } from 'react';
 import Button from './Button';
 
+/**
+ * HeroSection Component
+ * 
+ * Displays the main hero section of the landing page with a background image,
+ * headline, call-to-action button, and PDF catalog viewer modal.
+ */
 export default function HeroSection() {
+  const [isPdfOpen, setIsPdfOpen] = useState(false);
+
+  /**
+   * Handles opening and closing the PDF catalog modal
+   */
+  const togglePdfViewer = () => {
+    setIsPdfOpen(!isPdfOpen);
+  };
+
   return (
     <section className="relative h-[600px] overflow-hidden">
       <div className="absolute inset-0">
         <img 
-          src="/images/img1.jpg" 
+          src="/images/Cover1.jpg" 
           alt="Industrial Hardware" 
           className="w-full h-full object-cover scale-105 transition-transform duration-10000"
         />
@@ -26,13 +44,34 @@ export default function HeroSection() {
             Your trusted partner for premium quality industrial supplies since 1980
           </p>
           <Button 
-            href="#products"
+            onClick={togglePdfViewer}
             variant="secondary"
             className="inline-flex items-center animate-bounce-soft"
           >
-            Explore Products
-            <i className="fas fa-arrow-right ml-2" />
+            View Catalog
+            <i className="fas fa-book-open ml-2" />
           </Button>
+
+          {/* PDF Viewer Modal */}
+          {isPdfOpen && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70">
+              <div className="relative w-full max-w-6xl h-[90vh] bg-white rounded-lg shadow-xl">
+                {/* Close button */}
+                <button
+                  onClick={togglePdfViewer}
+                  className="absolute -top-4 -right-4 w-8 h-8 flex items-center justify-center bg-red-500 hover:bg-red-600 text-white rounded-full z-10"
+                >
+                  ×
+                </button>
+                {/* PDF Viewer */}
+                <iframe
+                  src="/MHBCatalog.pdf"
+                  className="w-full h-full rounded-lg"
+                  title="MHB Catalog"
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>
